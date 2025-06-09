@@ -42,15 +42,34 @@ document.addEventListener('click', function (e) {
   });
 });
 
-// ========== The Navigation Toggle codes ========== //
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+// // ========== The Navigation Toggle codes ========== //
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menuToggle = document.querySelector(".menu-toggle");
+//   const sidebar = document.getElementById("mobileSidebar");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-});
+//   menuToggle.addEventListener("click", () => {
+//     sidebar.classList.toggle("active");
+//   });
+
+//   // Optional: close sidebar on link click
+//   sidebar.querySelectorAll("a").forEach(link => {
+//     link.addEventListener("click", () => {
+//       sidebar.classList.remove("active");
+//     });
+//   });
+// });
+
+// const overlay = document.getElementById("sidebarOverlay");
+
+// menuToggle.addEventListener("click", () => {
+//   sidebar.classList.toggle("active");
+//   overlay.classList.toggle("active");
+// });
+
+// overlay.addEventListener("click", () => {
+//   sidebar.classList.remove("active");
+//   overlay.classList.remove("active");
+// });
 
 
 

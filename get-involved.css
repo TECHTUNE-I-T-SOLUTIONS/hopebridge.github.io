@@ -91,6 +91,7 @@
 
 .modal-content h2 {
   margin-bottom: 20px;
+  position: center;
   color: #2b2b2b;
 }
 
@@ -106,7 +107,7 @@
 }
 
 .modal-content button {
-  background-color: #0e6a57;
+  background-color: #2c3e50;
   color: white;
   padding: 12px 18px;
   border: none;
@@ -149,7 +150,8 @@
 } */
 
 .modal-content button:hover {
-  background-color: #0b4f42;
+  background-color: #608ebb;
+  color: rgb(0, 0, 0);
 }
 
 .close-button {

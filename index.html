@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HopeBridge Foundation - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HopeBridge Foundation - Home</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar-collapse.css" />
+    <script src="script.js" defer></script>
+    <script src="index-collapse.js" defer></script>
+  </head>
+
+  <body>
   <!-- Navigation codes are here -->
   <header class="navbar">
     <div class="navbar-left">
       <div class="logo"><a href="index.html">HopeBridge</a></div>
+    </div>
+
+    <!-- Collapsible Menu Toggle Icon -->
+    <div class="menu-toggle" title="Menu">
+      <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="Menu Icon" />
     </div>
 
     <!-- Desktop Navigation codes are here -->
@@ -19,41 +28,28 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-          <a href="projects.html">Projects</a>
-          <div class="dropdown-content">
-            <a href="education.html">Education</a>
-            <a href="healthcare.html">Healthcare</a>
-            <a href="meals.html">Meals</a>
-          </div>
-        </li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
         <li><a href="donate.html">Donate</a></li>
       </ul>
     </nav>
 
-<!-- Mobile Icon Navigation with Tooltips codes here-->
-    <div class="mobile-nav">
-      <div class="tooltip">
-        <a href="index.html"><img src="https://img.icons8.com/ios-filled/50/home.png" alt="Home" /></a>
-        <span class="tooltip-text">Home</span>
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="custom-sidebar-overlay"></div>
+
+    <!-- Custom Mobile Sidebar Navigation -->
+    <div class="custom-mobile-sidebar" id="mobileSidebar">
+      <div class="custom-sidebar-header">
+        <span>Menu</span>
+        <button id="closeSidebarBtn" aria-label="Close Sidebar">
+          ✕
+        </button>
       </div>
-      <div class="tooltip">
-        <a href="about.html"><img src="https://img.icons8.com/ios-filled/50/info.png" alt="About" /></a>
-        <span class="tooltip-text">About</span>
-      </div>
-      <div class="tooltip">
-        <a href="projects.html"><img src="https://img.icons8.com/ios-filled/50/briefcase.png" alt="Projects" /></a>
-        <span class="tooltip-text">Projects</span>
-      </div>
-      <div class="tooltip">
-        <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/50/groups.png" alt="Get Involved" /></a>
-        <span class="tooltip-text">Get Involved</span>
-      </div>
-      <div class="tooltip">
-        <a href="donate.html"><img src="https://img.icons8.com/ios-filled/50/charity.png" alt="Donate" /></a>
-        <span class="tooltip-text">Donate</span>
-      </div>
+      <a href="index.html"><img src="https://img.icons8.com/ios-filled/50/home.png" /><span>Home</span></a>
+      <a href="about.html"><img src="https://img.icons8.com/ios-filled/50/info.png" /><span>About</span></a>
+      <a href="projects.html"><img src="https://img.icons8.com/ios-filled/50/briefcase.png" /><span>Projects</span></a>
+      <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/50/groups.png" /><span>Get Involved</span></a>
+      <a href="donate.html"><img src="https://img.icons8.com/ios-filled/50/charity.png" /><span>Donate</span></a>
     </div>
   </header>
 
