@@ -68,40 +68,64 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
+  padding-top: 80px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
   background-color: #fff;
-  margin: 5% auto;
-  padding: 2rem;
-  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
   width: 90%;
-  max-width: 500px;
-  position: relative;
+  height: fit-content;
+  max-width: 600px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .modal-content h2 {
-  margin-bottom: 1rem;
-  color: #2c3e50;
+  margin-bottom: 20px;
+  color: #2b2b2b;
 }
 
-.modal-content form input,
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  background-color: #0e6a57;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* .modal-content form input,
 .modal-content form textarea {
   width: 100%;
   padding: 0.75rem;
   margin: 0.5rem 0 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-}
+} */
 
-.modal-content form button {
+/* .modal-content form button {
   background-color: #3498db;
   color: white;
   border: none;
@@ -109,9 +133,9 @@
   border-radius: 25px;
   cursor: pointer;
   font-weight: bold;
-}
+} */
 
-.modal-content form button:hover {
+/* .modal-content form button:hover {
   background-color: #2980b9;
 }
 
@@ -122,4 +146,19 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: #999;
+} */
+
+.modal-content button:hover {
+  background-color: #0b4f42;
+}
+
+.close-button {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+}
+
+.hidden {
+  display: none;
 }
