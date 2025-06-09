@@ -41,7 +41,8 @@
     </div>
   </header>
 
-  <section class="get-involved-hero">
+  <section class="hero">
+    <div class="logoontop">HopeBridge</div>
     <h1>Get Involved</h1>
     <p>Join us in transforming lives and building a better future for all.</p>
   </section>
@@ -71,10 +72,46 @@
     <div class="modal-content">
       <span class="close-button" onclick="closeForm()">&times;</span>
       <h2 id="formTitle">Get Involved</h2>
-      <form>
-        <input type="text" placeholder="Your Full Name" required />
-        <input type="email" placeholder="Your Email Address" required />
-        <textarea placeholder="Tell us how you’d like to help" required></textarea>
+
+      <!-- VOLUNTEER FORM -->
+      <form id="volunteerForm" class="form-section hidden">
+        <input type="text" placeholder="Full Name" required />
+        <select required>
+          <option value="">Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="State of Residency" required />
+        <input type="text" placeholder="Country" required />
+        <textarea placeholder="Why do you want to volunteer?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- PARTNER FORM -->
+      <form id="partnerForm" class="form-section hidden">
+        <input type="text" placeholder="Organization Name" required />
+        <input type="text" placeholder="Contact Person's Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="url" placeholder="Website (if any)" />
+        <input type="text" placeholder="Type of Partnership (e.g. CSR, NGO, Individual)" required />
+        <textarea placeholder="Tell us how you'd like to partner with us" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- FUNDRAISE FORM -->
+      <form id="fundraiseForm" class="form-section hidden">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Fundraiser Title" required />
+        <textarea placeholder="Describe your fundraising idea or event" required></textarea>
+        <input type="date" placeholder="Proposed Date" required />
+        <input type="text" placeholder="City & Country" required />
         <button type="submit">Submit</button>
       </form>
     </div>

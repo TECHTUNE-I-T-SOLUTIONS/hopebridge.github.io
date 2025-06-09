@@ -107,7 +107,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2c7a7b;
+  color: #2c3e50;
 }
 
 .logoontop {
@@ -329,7 +329,7 @@ body {
 
 /* Vision Section */
 .vision-section {
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  background: linear-gradient(to right, #fdfbfb, #83c0e9);
   padding: 60px 20px;
   text-align: center;
   border-top: 2px solid #e0e0e0;
@@ -486,7 +486,7 @@ body {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #2c7a7b;
+  color: #2c3e50;
 }
 
 /* Stats */
@@ -499,7 +499,7 @@ body {
 }
 
 .stat {
-  background-color: #e6f5f4;
+  background-color: #8ba8c4;
   padding: 1.5rem;
   border-radius: 8px;
   width: 150px;
@@ -514,7 +514,7 @@ body {
 .stat span {
   font-size: 2rem;
   font-weight: bold;
-  color: #2c7a7b;
+  color: #fcfcfc;
 }
 
 /* Volunteer Form */
@@ -550,7 +550,7 @@ form button:hover {
 
 /* Footer */
 footer {
-  background-color: #2c7a7b;
+  background-color: #2c3e50;
   color: white;
   text-align: center;
   padding: 2rem;
@@ -566,7 +566,7 @@ footer a {
 
 /* Buttons */
 .btn {
-  background-color: #58c2c4;
+  background-color: #2c3e50;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
@@ -597,7 +597,7 @@ footer a {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #2c7a7b;
+  background: #2c3e50;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 50px;
