@@ -1,4 +1,4 @@
-// Fade-in timeline items on scroll
+// Fade-in timeline items on scroll for the about page
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".timeline-item");
 

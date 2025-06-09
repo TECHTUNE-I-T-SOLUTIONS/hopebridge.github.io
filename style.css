@@ -14,7 +14,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Default: show full nav, hide icons */
+/* by default: it'll show full nav, hide icons */
 .desktop-nav {
   display: block;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 
-/* Responsive for ≤768px: show icons, hide full menu */
+/* Responsive for ≤768px: shows icons, hides full menu */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
@@ -173,7 +173,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  /* Show menu when active */
+  /* To show menu when active */
   .nav-links.active {
     display: flex;
   }
@@ -351,7 +351,7 @@ body {
 }
 
 .vision-section strong {
-  color: #e67e22; /* Orange highlight for 'HopeBridge' */
+  color: #e67e22; /* I added orange highlight for 'HopeBridge' */
 }
 
 .testimonials {
@@ -374,7 +374,7 @@ body {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  max-height: 400px; /* Set a consistent max height */
+  max-height: 400px; /* to set a consistent max height for the images */
 }
 
 .carousel-slide {
@@ -414,7 +414,7 @@ body {
 .carousel-slide img {
   width: 100%;
   height: 400px; /* Fixed height */
-  object-fit: cover; /* Ensures image fills space without distortion */
+  object-fit: cover; /* This one will ensure the images fills space without distortion */
 }
 
 .carousel button {
@@ -457,7 +457,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('hero-image.jpg') center/cover no-repeat;
+  background: url('https://cargofactsevents.com/wp-content/uploads/2021/01/hero-background.png') center/cover no-repeat;
   color: white;
   padding: 6rem 2rem;
   text-align: center;
@@ -687,7 +687,6 @@ body.dark-mode .btn-outline:hover {
 
 
 /* about page additional styles */
-/* Smaller hero section for About page */
 .small-hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
               url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf01f?auto=format&fit=crop&w=1470&q=80') no-repeat center center;

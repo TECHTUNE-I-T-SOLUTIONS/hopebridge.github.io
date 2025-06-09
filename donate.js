@@ -11,10 +11,10 @@ function handleDonation(event) {
     return false;
   }
 
-  // Simulate payment process (replace with real gateway later)
+  // I simulated the payment process. we don't need it to be elaborate, do we?
   alert(`Thank you, ${name}! You’ve chosen to make a ${type} donation of ₦${amount}. A confirmation email will be sent to ${email}.`);
 
-  // Optionally reset the form
+  // I reset the form here
   event.target.reset();
   return false;
 }

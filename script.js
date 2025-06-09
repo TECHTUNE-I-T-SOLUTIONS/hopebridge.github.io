@@ -1,4 +1,4 @@
-// ========== Carousel ========== //
+// ========== Image Carousel ========== //
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.querySelector('.prev');
@@ -32,7 +32,7 @@ document.querySelectorAll('.nav-links .dropdown > a').forEach(link => {
     }
   });
 });
-// Close dropdowns when clicking outside
+// To close dropdowns when clicking outside
 document.addEventListener('click', function (e) {
   const dropdowns = document.querySelectorAll('.nav-links .dropdown > ul');
   dropdowns.forEach(dropdown => {
@@ -42,7 +42,7 @@ document.addEventListener('click', function (e) {
   });
 });
 
-// ========== Navigation Toggle ========== //
+// ========== The Navigation Toggle codes ========== //
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// ========== Animated Counters ========== //
+// ========== then, i added animated Counters ========== //
 function animateCounter(id, target) {
   const el = document.getElementById(id);
   let count = 0;
@@ -73,17 +73,6 @@ function animateCounter(id, target) {
 
 
 
-// ========== Theme Toggle ========== //
-const toggleThemeBtn = document.getElementById('toggle-theme');
-const root = document.documentElement;
-if (toggleThemeBtn) {
-  toggleThemeBtn.addEventListener('click', () => {
-    const currentTheme = root.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-  });
-}
 
 window.addEventListener('load', () => {
   // Initialize Carousel
@@ -103,7 +92,7 @@ window.addEventListener('load', () => {
 });
 
 
-// ========== Back to Top ========== //
+// ========== Back to Top button ========== //
 const backToTopBtn = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   backToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';

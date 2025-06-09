@@ -24,7 +24,7 @@ function closeForm() {
   modal.style.display = "none";
 }
 
-// Close the modal when clicking outside the modal box
+// To close the modal when clicking outside the modal box
 window.addEventListener("click", function (e) {
   const modal = document.getElementById("formModal");
   if (e.target === modal) {
