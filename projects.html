@@ -7,13 +7,23 @@
   <link rel="stylesheet" href="projectstyle.css" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="projectscript.js"></script>
+  <script src="index-collapse.js" defer></script>
+  <link rel="stylesheet" href="sidebar-collapse.css" />
+  
 </head>
-<body>
+  <body>
+  <!-- Navigation codes are here -->
   <header class="navbar">
     <div class="navbar-left">
       <div class="logo"><a href="index.html">HopeBridge</a></div>
     </div>
 
+    <!-- Collapsible Menu Toggle Icon -->
+    <div class="menu-toggle" title="Menu">
+      <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" alt="Menu Icon" />
+    </div>
+
+    <!-- Desktop Navigation codes are here -->
     <nav class="desktop-nav">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -24,13 +34,22 @@
       </ul>
     </nav>
 
-    <!-- Mobile Icons codes here -->
-    <div class="mobile-nav">
-      <a href="index.html"><img src="https://img.icons8.com/ios-filled/24/home.png" alt="Home" title="Home" /></a>
-      <a href="about.html"><img src="https://img.icons8.com/ios-filled/24/info.png" alt="About" title="About" /></a>
-      <a href="projects.html"><img src="https://img.icons8.com/ios-filled/24/briefcase.png" alt="Projects" title="Projects" /></a>
-      <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/24/groups.png" alt="Get Involved" title="Get Involved" /></a>
-      <a href="donate.html"><img src="https://img.icons8.com/ios-filled/24/charity.png" alt="Donate" title="Donate" /></a>
+    <!-- Overlay -->
+    <div id="sidebarOverlay" class="custom-sidebar-overlay"></div>
+
+    <!-- Custom Mobile Sidebar Navigation -->
+    <div class="custom-mobile-sidebar" id="mobileSidebar">
+      <div class="custom-sidebar-header">
+        <span>Menu</span>
+        <button id="closeSidebarBtn" aria-label="Close Sidebar">
+          ✕
+        </button>
+      </div>
+      <a href="index.html"><img src="https://img.icons8.com/ios-filled/50/home.png" /><span>Home</span></a>
+      <a href="about.html"><img src="https://img.icons8.com/ios-filled/50/info.png" /><span>About</span></a>
+      <a href="projects.html"><img src="https://img.icons8.com/ios-filled/50/briefcase.png" /><span>Projects</span></a>
+      <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/50/groups.png" /><span>Get Involved</span></a>
+      <a href="donate.html"><img src="https://img.icons8.com/ios-filled/50/charity.png" /><span>Donate</span></a>
     </div>
   </header>
 
