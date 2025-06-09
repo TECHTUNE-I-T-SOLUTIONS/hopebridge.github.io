@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate – HopeBridge Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="donate.css" />
+  <script src="donate.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo"><a href="index.html">HopeBridge</a></div>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="projects.html">Projects</a>
+          <div class="dropdown-content">
+            <a href="education.html">Education</a>
+            <a href="healthcare.html">Healthcare</a>
+            <a href="meals.html">Meals</a>
+          </div>
+        </li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-nav">
+      <a href="index.html"><img src="https://img.icons8.com/ios-filled/24/home.png" /></a>
+      <a href="about.html"><img src="https://img.icons8.com/ios-filled/24/info.png" /></a>
+      <a href="projects.html"><img src="https://img.icons8.com/ios-filled/24/briefcase.png" /></a>
+      <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/24/groups.png" /></a>
+      <a href="donate.html"><img src="https://img.icons8.com/ios-filled/24/charity.png" /></a>
+    </div>
+  </header>
+
+  <section class="donate-hero">
+    <h1>Make a Difference</h1>
+    <p>Your contribution brings hope and support to underprivileged communities.</p>
+  </section>
+
+  <section class="donation-form-section">
+    <form class="donation-form" onsubmit="return handleDonation(event)">
+      <h2>Donate Today</h2>
+      
+      <label for="donationAmount">Donation Amount (₦)</label>
+      <input type="number" id="donationAmount" placeholder="e.g. 5000" required />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your Name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="donationType">Donation Type</label>
+      <select id="donationType">
+        <option value="one-time">One-time</option>
+        <option value="monthly">Monthly</option>
+        <option value="annual">Annually</option>
+      </select>
+
+      <button type="submit">Proceed to Donate</button>
+    </form>
+  </section>
+
+  <section class="donation-impact">
+    <h3>Where Your Donation Goes</h3>
+    <ul>
+      <li>📘 ₦20,000 can provide school supplies for one child.</li>
+      <li>🩺 ₦50,000 can cover basic healthcare for a family.</li>
+      <li>🍛 ₦100,000 can provide meals to a small community.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HopeBridge Foundation. All rights reserved.</p>
+    <a href="#" id="back-to-top">Back to top</a>
+  </footer>
+</body>
+</html>

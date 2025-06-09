@@ -1,0 +1,93 @@
+.donate-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #0d47a1, #42a5f5);
+  color: #fff;
+}
+
+.donate-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.donate-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.donation-form-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #f4f4f4;
+}
+
+.donation-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.donation-form h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.donation-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.donation-form input,
+.donation-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.donation-form button {
+  background: #0d47a1;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.donation-form button:hover {
+  background: #08306b;
+}
+
+.donation-impact {
+  background-color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.donation-impact h3 {
+  font-size: 1.6rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.donation-impact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donation-impact li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #333;
+}

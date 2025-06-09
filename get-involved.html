@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Involved – HopeBridge Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="get-involved.css" />
+  <script src="get-involved.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo"><a href="index.html">HopeBridge</a></div>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="projects.html">Projects</a>
+          <div class="dropdown-content">
+            <a href="education.html">Education</a>
+            <a href="healthcare.html">Healthcare</a>
+            <a href="meals.html">Meals</a>
+          </div>
+        </li>
+        <li><a href="get-involved.html" class="active">Get Involved</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Icons -->
+    <div class="mobile-nav">
+      <a href="index.html"><img src="https://img.icons8.com/ios-filled/24/home.png" alt="Home" title="Home" /></a>
+      <a href="about.html"><img src="https://img.icons8.com/ios-filled/24/info.png" alt="About" title="About" /></a>
+      <a href="projects.html"><img src="https://img.icons8.com/ios-filled/24/briefcase.png" alt="Projects" title="Projects" /></a>
+      <a href="get-involved.html"><img src="https://img.icons8.com/ios-filled/24/groups.png" alt="Get Involved" title="Get Involved" /></a>
+      <a href="donate.html"><img src="https://img.icons8.com/ios-filled/24/charity.png" alt="Donate" title="Donate" /></a>
+    </div>
+  </header>
+
+  <section class="get-involved-hero">
+    <h1>Get Involved</h1>
+    <p>Join us in transforming lives and building a better future for all.</p>
+  </section>
+
+  <section class="involvement-options">
+    <div class="option-card">
+      <h3>Volunteer</h3>
+      <p>Use your time and skills to support education, healthcare, and outreach programs.</p>
+      <button onclick="openForm('volunteer')">Sign Up</button>
+    </div>
+
+    <div class="option-card">
+      <h3>Partner With Us</h3>
+      <p>Collaborate with HopeBridge to amplify impact through corporate or nonprofit partnership.</p>
+      <button onclick="openForm('partner')">Get in Touch</button>
+    </div>
+
+    <div class="option-card">
+      <h3>Fundraise</h3>
+      <p>Organize a fundraiser in your community or online to help us reach more people.</p>
+      <button onclick="openForm('fundraise')">Start Now</button>
+    </div>
+  </section>
+
+  <!-- Modal Form (hidden by default) -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeForm()">&times;</span>
+      <h2 id="formTitle">Get Involved</h2>
+      <form>
+        <input type="text" placeholder="Your Full Name" required />
+        <input type="email" placeholder="Your Email Address" required />
+        <textarea placeholder="Tell us how you’d like to help" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 HopeBridge Foundation. All rights reserved.</p>
+    <a href="#" id="back-to-top">Back to top</a>
+  </footer>
+</body>
+</html>
